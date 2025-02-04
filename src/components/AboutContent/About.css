@@ -1,0 +1,94 @@
+.about {
+    min-height: calc(100vh - 160px);
+    padding: 2rem;
+    position: relative; 
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:
+        linear-gradient(90deg,
+            rgba(52, 225, 235, 0.082) 1px,
+            transparent 1px),
+        linear-gradient(rgba(52, 225, 235, 0.082) 1px, 
+            transparent 1px);
+    background-size: 50px 50px;
+    animation: grid-move 20s linear infinite;
+    z-index: 0;
+}
+
+.about h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    text-align: center;
+    color: var(--neon-cyan); 
+    text-shadow: 0 0 10px var(--neon-cyan); 
+    position: relative;
+    z-index: 2;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 20px;
+    border: 1px solid var(--neon-cyan); 
+    box-shadow: 0 0 20px var(--neon-cyan); 
+    position: relative;
+    z-index: 2;
+    backdrop-filter: blur(10px);
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--text-color); 
+    margin-bottom: 1.5rem;
+    text-shadow: 0 0 5px rgba(52, 225, 235, 0.3); 
+}
+
+.skills h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: var(--neon-pink); 
+    text-shadow: 0 0 10px var(--neon-pink); 
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.skill-item {
+    background: rgba(52, 225, 235, 0.1); 
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--neon-cyan); 
+    box-shadow: 0 0 10px rgba(52, 225, 235, 0.2); 
+    transition: all 0.3s ease;
+    color: var(--text-color); 
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px var(--neon-cyan); 
+    background: rgba(52, 225, 235, 0.2);
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+}
