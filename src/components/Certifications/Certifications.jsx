@@ -84,7 +84,9 @@ const Certifications = () => {
   };
 
   return (
-    <div className="certifications">
+    <div className='certifications'>
+
+    <div className="Certification-section">
       <h1>My Certifications & Achievements</h1>
         <h2 className='closer-head'>My Journies & Wins</h2>
 
@@ -180,6 +182,8 @@ const Certifications = () => {
         </div>
       )}
     </div>
+    </div>
+
   );
 };
 

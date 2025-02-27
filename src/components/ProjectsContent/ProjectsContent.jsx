@@ -24,7 +24,6 @@ function ProjectsContent() {
   const [filter, setFilter] = useState('all'); 
 
   const projects = [
-
     {
       category: ['websites', 'latest', 'softwares', 'AIs'],
       title: 'Project: VitalCheck || Cancer Detection AI',
@@ -166,6 +165,9 @@ function ProjectsContent() {
 
   return (
     <div className="projects">
+
+      <div className='Projects-section'>
+
       <h1 className="heading-projects">My Projects</h1>
 
       {/* Filter Buttons */}
@@ -255,6 +257,8 @@ function ProjectsContent() {
           </div>
         </div>
       )}
+      </div>
+
     </div>
   );
 }

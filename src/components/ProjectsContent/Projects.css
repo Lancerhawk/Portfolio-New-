@@ -146,6 +146,11 @@
     position: relative; 
 }
 
+.Projects-section{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .projects::before {
     content: '';
     position: absolute;
@@ -164,7 +169,7 @@
       );
     background-size: 50px 50px;
     animation: grid-move 20s linear infinite;
-    z-index: 1;
+    z-index: -1000;
 }
 
 .projects h1 {

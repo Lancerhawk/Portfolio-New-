@@ -5,6 +5,11 @@
     position: relative;
 }
 
+.Certification-section{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
 .certifications::before {
     content: '';
     position: absolute;
@@ -12,6 +17,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    max-width: auto;
     background: 
       linear-gradient(90deg, 
         rgba(52, 225, 235, 0.082) 1px, 

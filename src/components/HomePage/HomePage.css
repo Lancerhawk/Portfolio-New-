@@ -1,15 +1,26 @@
 .homepage-container {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  height: 90vh;
+  height: 89vh;
+  padding: 0 20px;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.Homepage{
+  display: flex;
+  justify-content: center;
+  height: 89vh;
   padding: 0 20px;
   flex-direction: column;
   position: relative;
   z-index: 0;
 }
 
-.homepage-container::before {
+.Homepage::before {
   content: '';
   position: absolute;
   top: 0;
@@ -27,7 +38,7 @@
     );
   background-size: 50px 50px;
   animation: grid-move 20s linear infinite;
-  z-index: 0;
+  z-index: -1000;
 }
 
 .left-section {
