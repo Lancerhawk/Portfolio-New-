@@ -23,7 +23,7 @@
       );
     background-size: 50px 50px;
     animation: grid-move 20s linear infinite;
-    z-index: 0;
+    z-index: -1000;
 }
 
 .certifications h1 {
@@ -39,11 +39,19 @@
 .certifications-section {
     margin-bottom: 3rem;
     z-index: 2;
+    margin-top: 4rem;
 }
 
 .certifications-section h2 {
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--neon-pink);
+    text-shadow: 0 0 10px var(--neon-pink);
+}
+
+.closer-head{
+    font-size: 2rem;
+    margin-bottom: 1rem;
     color: var(--neon-pink);
     text-shadow: 0 0 10px var(--neon-pink);
 }
@@ -132,7 +140,7 @@
     background: #000;
     padding: 1rem;
     border-radius: 10px;
-    max-width: 90%;
+    max-width: 80%;
     max-height: 90%;
     overflow: auto;
     box-shadow: 0 0 30px var(--neon-cyan);
@@ -140,7 +148,7 @@
 
 .modal-content img {
     display: block;
-    max-width: 90%;
+    max-width: 70%;
     max-height: 90%;
     height: auto;
     width: auto;
@@ -153,6 +161,8 @@
 .modal-content h2 {
     color: var(--neon-pink);
     margin-bottom: 1rem;
+    margin-top: 0;
+    padding-top: 0;
     text-align: center;
 }
 
@@ -248,3 +258,5 @@
         margin-bottom: 1rem; 
     }
 }
+
+

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './Projects.css';
 
-// Dynamically import all images from the folder
 const importImages = (requireContext) => {
   return requireContext.keys().map(requireContext);
 };
@@ -16,6 +15,7 @@ const museum = importImages(require.context('../../assets/bg/Project 7', false, 
 const skillmorph = importImages(require.context('../../assets/bg/Project 8', false, /\.(jpg|jpeg|png)$/));
 const employee = importImages(require.context('../../assets/bg/Project 9', false, /\.(jpg|jpeg|png)$/));
 const expense = importImages(require.context('../../assets/bg/Project 10', false, /\.(jpg|jpeg|png)$/));
+const vital = importImages(require.context('../../assets/bg/Project12', false, /\.(jpg|jpeg|png)$/));
 
 function ProjectsContent() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -24,9 +24,21 @@ function ProjectsContent() {
   const [filter, setFilter] = useState('all'); 
 
   const projects = [
+
+    {
+      category: ['websites', 'latest', 'softwares', 'AIs'],
+      title: 'Project: VitalCheck || Cancer Detection AI',
+      description:
+        'Made for Early Detection of Cancer using AI using Blood test reports, MRI scans, CT scans, etc. This project was made during the AI for HealthCare Hackathon. Created Profiles for Individuals and Doctors.',
+      coverImage: vital[0], 
+      images: vital,    
+      technologies: ['Javascript','React.JS','TensorFlows','Keras', 'OpenCV'],
+      github: 'https://github.com/Lancerhawk/Cancer-DetectionAI',
+      live: 'https://cancer-detection-d57r83ul8-lancerhawks-projects.vercel.app/',
+    },
     {
       category: ['softwares', 'websites', 'latest'],
-      title: 'MedicKit',
+      title: 'Project: MedicKit || Drug Management System',
       description:
         'A supply chain management system for hospitals, created during the hackathon of SIH2024 as a finalist member of a team. This system allows hospitals to manage their drug inventory in real time, ensuring efficient supply chain management, and reducing stockouts and overstocking.',
       coverImage: medickit[0],  
@@ -34,6 +46,28 @@ function ProjectsContent() {
       technologies: ['React', 'Node.js', 'PostgresQL', 'Express'],
       github: 'https://github.com',
       live: 'https://project-medic-kit-633s1zbup-lancerhawks-projects.vercel.app/',
+    },
+    {
+      category: ['websites', 'latest', 'softwares'],
+      title: 'Employee Management System',
+      description:
+        'This project started as an experiment to enhance my React skills while diving into the world of file system storage. With a growing interest in backend development and curiosity about file storage, I challenged myself to build an Employee Management System. Here, users can log in as either an employee or admin, access personalized dashboards, and manage tasks—all without relying on external databases.',
+      coverImage: employee[0],
+      images: employee,    
+      technologies: ['Javascript','React.JS','React Router','Vite','UI/UX'],
+      github: 'https://github.com/Lancerhawk/Employee-Management-System',
+      live: 'https://employee-management-system-4s1y-ex5ps0ppl-lancerhawks-projects.vercel.app/',
+    },
+    {
+      category: ['websites', 'latest', 'softwares'],
+      title: 'Expense Tracking System',
+      description:
+        'The Transaction Management System is a web application that helps users track their finances by managing income and expenses. It allows users to Log in and out of their account, Add transactions (expenses or income) with categories, amounts, and descriptions, View interactive analytics charts to visualize spending and income trends.',
+      coverImage: expense[0], 
+      images: expense,    
+      technologies: ['Javascript','React.JS','React Router','UI/UX'],
+      github: 'https://github.com/Lancerhawk/Expense-Management-System',
+      live: '',
     },
     {
       category: ['games'],
@@ -112,28 +146,6 @@ function ProjectsContent() {
       github: 'https://github.com/Lancerhawk/OnlineTicketBooking_Museum-Homepage-design',
       live: 'https://online-ticket-booking-museum-homepage-design.vercel.app/',
     },
-    {
-      category: ['websites', 'latest', 'softwares'],
-      title: 'Employee Management System',
-      description:
-        'This project started as an experiment to enhance my React skills while diving into the world of file system storage. With a growing interest in backend development and curiosity about file storage, I challenged myself to build an Employee Management System. Here, users can log in as either an employee or admin, access personalized dashboards, and manage tasks—all without relying on external databases.',
-      coverImage: employee[0],
-      images: employee,    
-      technologies: ['Javascript','React.JS','React Router','Vite','UI/UX'],
-      github: 'https://github.com/Lancerhawk/Employee-Management-System',
-      live: 'https://employee-management-system-4s1y-ex5ps0ppl-lancerhawks-projects.vercel.app/',
-    },
-    {
-      category: ['websites', 'latest', 'softwares'],
-      title: 'Expense Tracking System',
-      description:
-        'The Transaction Management System is a web application that helps users track their finances by managing income and expenses. It allows users to Log in and out of their account, Add transactions (expenses or income) with categories, amounts, and descriptions, View interactive analytics charts to visualize spending and income trends.',
-      coverImage: expense[0], 
-      images: expense,    
-      technologies: ['Javascript','React.JS','React Router','UI/UX'],
-      github: 'https://github.com/Lancerhawk/Expense-Management-System',
-      live: '',
-    },
   ];
 
   const openModal = (projectTitle, projectImages) => {
@@ -158,7 +170,7 @@ function ProjectsContent() {
 
       {/* Filter Buttons */}
       <div className="filter-buttons">
-        {['all','latest', 'websites', 'games', 'softwares'].map(category => (
+        {['all','latest', 'websites', 'games', 'softwares', 'AIs'].map(category => (
           <button
             key={category}
             className={filter === category ? 'active' : ''}

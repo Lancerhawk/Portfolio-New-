@@ -15,7 +15,7 @@ import CS from '../../assets/Certifications_Images/Introduction-to-Cybersecurity
 import FE from '../../assets/Certifications_Images/Introduction-to-Front-End-Development/Introduction to Front-End Development_page-0001.jpg'
 import Packet from '../../assets/Certifications_Images/Introduction-to-Packet-Tracer/Introduction to Packet Tracer_page-0001.jpg'
 import Investiment from '../../assets/Certifications_Images/Investiment-Risk-Management/Investiment Risk Management_page-0001.jpg'
-import Nodejs from '../../assets/Certifications_Images/NodeJS-webinar/NodeJS webinar_page-0001.jpg'
+import Nodejs from '../../assets/Certifications_Images/NodeJS-webinar/NodeJS webinar_page-0001.png'
 import JS from '../../assets/Certifications_Images/Programming-with-JavaScript/Programming with JavaScript_page-0001.jpg'
 import CyberSecurityEssentials from '../../assets/Certifications_Images/Cybersecurity Essentials badge_pages-to-jpg-0001.jpg'
 import GovCertification from '../../assets/Certifications_Images/Gov certification (1)_pages-to-jpg-0001.jpg'
@@ -27,7 +27,10 @@ import FCS1 from '../../assets/Certifications_Images/Fortinet/FCA-FortiGate7.4Op
 import FCS2 from '../../assets/Certifications_Images/Fortinet/FCF-GettingStartedInCyberSecurity2.0_page-0001.jpg'
 import FCS3 from '../../assets/Certifications_Images/Fortinet/FCF-IntroductionToTheThreatLandscape2.0_page-0001.jpg'
 import FCS4 from '../../assets/Certifications_Images/Fortinet/FCF-TechnicalIntroductionToCyberSecurity1.0_page-0001.jpg'
-import Ultron from '../../assets/Certifications_Images/UltronHackathon/Untitled design (3).jpg'
+import Ultron from '../../assets/Certifications_Images/UltronHackathon/Untitled design (3).png'
+import HackJMI from '../../assets/Certifications_Images/HackJMI/Untitled design.png'
+import Corousel from './CorouselViewer';
+import AI from '../../assets/Certifications_Images/AIforHealthCare/AI for HealthCare.jpg'
 
 const internshipCertifications = [
   { id: 1, title: 'IBM Skill Build Training', image: IBM },
@@ -37,8 +40,10 @@ const internshipCertifications = [
 
 const hackathonCertifications = [
   { id: 4, title: 'SIH 2024 Hackathon Finalist', image: SIH  },
+  { id: 4, title: 'AI for HealthCare Hackathon', image: AI  },
   { id: 5, title: 'ISTD Online Hackathon', image: ISTD  },
   { id: 6, title: 'Ultron 8.0 SRM Hackathon ', image: Ultron },
+  { id: 4, title: 'HackJMI', image: HackJMI  },
 ];
 
 const lifetimeAchievements = [
@@ -81,6 +86,9 @@ const Certifications = () => {
   return (
     <div className="certifications">
       <h1>My Certifications & Achievements</h1>
+        <h2 className='closer-head'>My Journies & Wins</h2>
+
+      <Corousel/>
 
       <section className="certifications-section">
         <h2>High Level Achievements</h2>
@@ -110,7 +118,7 @@ const Certifications = () => {
           </div>
 
           <div className="certifications-right">
-            <h3>Hackathon Certifications</h3>
+            <h3>Hackathon's Certifications</h3>
             <div className="certifications-grid1">
               {hackathonCertifications.map((cert) => (
                 <div

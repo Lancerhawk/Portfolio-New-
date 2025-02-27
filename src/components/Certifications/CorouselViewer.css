@@ -1,0 +1,59 @@
+.corousel-viewer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.corousel-viewer-arrow {
+  background-color: transparent;
+  border: none;
+  color: var(--neon-cyan);
+  font-size: 3rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+
+.corousel-viewer-arrow.left {
+  left: 10px;
+}
+
+.corousel-viewer-arrow.right {
+  right: 10px;
+}
+
+.corousel-viewer-arrow:hover {
+  color: var(--neon-hover-cyan);
+}
+
+.corousel-bubbles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: -30px;
+}
+
+.corousel-bubble {
+  width: 10px;
+  height: 10px;
+  background-color: var(--neon-cyan);
+  border-radius: 50%;
+  margin: 0 5px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.corousel-bubble.active {
+  background-color: var(--neon-pink);
+}
+
+.corousel-bubble:hover {
+  background-color: var(--neon-blue);
+}

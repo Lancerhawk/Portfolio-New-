@@ -24,7 +24,7 @@ function StatsBox() {
       <div className="stats-card">
         <h3 className="card-title">Projects Built</h3>
         <div className="card-content">
-          <span className="count">15+ Projects</span>
+          <span className="count">10+ Projects</span>
         </div>
         <div className="social-links">
           <a href="https://github.com/Lancerhawk" target="_blank" rel="noopener noreferrer">
@@ -39,7 +39,7 @@ function StatsBox() {
       <div className="stats-card">
         <h3 className="card-title">Experience</h3>
         <div className="card-content">
-          <span className="count">2+ Years</span>
+          <span className="count">6 Month</span>
         </div>
         <div className="social-links">
           <a href="https://www.linkedin.com/in/arin-jain-782098258/" target="_blank" rel="noopener noreferrer">
