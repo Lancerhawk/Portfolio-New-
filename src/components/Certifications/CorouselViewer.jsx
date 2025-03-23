@@ -42,7 +42,7 @@ const projects = [
       { name: "Arin Jain", linkedin: "https://www.linkedin.com/in/arin-jain-782098258/" },
       { name: "Arpit Shukla", linkedin: "https://www.linkedin.com/in/arpit-s-5207a4253/" },
     ],
-    description: "Went to Global Enterpreneuship Summit At IIT Kharagpur! Participated in Handson Workshops, Ceremony, Events etc. Made Connections with IITians, Professors, Enterpreneurs and learned about Software Development, Cybersecurity and Team Management by Industry Experts.",
+    description: "Went to Global Enterpreneuship Summit(2025) at IIT Kharagpur! Participated in Handson Workshops, Ceremony, Events etc. Made Connections with IITians, Professors, Enterpreneurs and learned about Software Development, Cybersecurity and Team Management by Industry Experts.",
     moreDetailsLink: "https://www.linkedin.com/feed/update/urn:li:activity:7295469868399620097/",  
   },
 ];

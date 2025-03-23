@@ -6,9 +6,13 @@ import myphoto from '../../assets/photos/myphoto.png'
 
 const HomePage = () => {
   return (
+    
     <div className='Homepage'>
 
+
+
       <div className="homepage-container">
+
 
         <div className="left-section">
           <h1>Hi, I am Arin Jain<br />I am a{" "}
@@ -50,6 +54,7 @@ const HomePage = () => {
           </div>
         </div>
       </div>
+
     </div>
 
 

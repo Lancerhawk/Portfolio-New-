@@ -1,10 +1,10 @@
 import React from 'react';
-import './Spinner.css'; // You'll create this CSS file to style the spinner.
+import './Spinner.css';
 
 const Spinner = () => {
   return (
     <div className="spinner-overlay">
-      <div className="spinner"></div>
+      <span className="loader"></span>
     </div>
   );
 };
