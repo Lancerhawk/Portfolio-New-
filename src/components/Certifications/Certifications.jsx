@@ -30,7 +30,8 @@ import FCS4 from '../../assets/Certifications_Images/Fortinet/FCF-TechnicalIntro
 import Ultron from '../../assets/Certifications_Images/UltronHackathon/Untitled design (3).png'
 import HackJMI from '../../assets/Certifications_Images/HackJMI/Untitled design.png'
 import Corousel from './CorouselViewer';
-import AI from '../../assets/Certifications_Images/AIforHealthCare/AI for HealthCare.jpg'
+import AI from '../../assets/Certifications_Images/AIforHealthCare/AI for HealthCare.jpg';
+import wehack from '../../assets/Certifications_Images/WeHack/wehack.png';
 
 const internshipCertifications = [
   { id: 1, title: 'IBM Skill Build Training', image: IBM },
@@ -40,10 +41,11 @@ const internshipCertifications = [
 
 const hackathonCertifications = [
   { id: 4, title: 'SIH 2024 Hackathon Finalist', image: SIH  },
-  { id: 4, title: 'AI for HealthCare Hackathon', image: AI  },
-  { id: 5, title: 'ISTD Online Hackathon', image: ISTD  },
-  { id: 6, title: 'Ultron 8.0 SRM Hackathon ', image: Ultron },
-  { id: 4, title: 'HackJMI', image: HackJMI  },
+  { id: 5, title: 'AI for HealthCare Hackathon', image: AI  },
+  { id: 6, title: 'ISTD Online Hackathon', image: ISTD  },
+  { id: 7, title: 'Ultron 8.0 SRM Hackathon ', image: Ultron },
+  { id: 8, title: 'WeHack Hackathon', image: wehack},
+  { id: 9, title: 'HackJMI', image: HackJMI  },
 ];
 
 const lifetimeAchievements = [
