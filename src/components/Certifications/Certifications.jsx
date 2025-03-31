@@ -32,11 +32,14 @@ import HackJMI from '../../assets/Certifications_Images/HackJMI/Untitled design.
 import Corousel from './CorouselViewer';
 import AI from '../../assets/Certifications_Images/AIforHealthCare/AI for HealthCare.jpg';
 import wehack from '../../assets/Certifications_Images/WeHack/wehack.png';
+import Inspiron from '../../assets/Certifications_Images/Inpiron/Inspiron.jpg';
+import certi from '../../assets/Certifications_Images/Intern/certi.jpg';
 
 const internshipCertifications = [
   { id: 1, title: 'IBM Skill Build Training', image: IBM },
   { id: 2, title: 'Machine Learning Training', image: MachineLearning },
   { id: 3, title: 'EduSkills Learning Platform Certification', image: EduSkill },
+  { id: 3, title: 'EliteTech Intern', image: certi },
 ];
 
 const hackathonCertifications = [
@@ -44,6 +47,7 @@ const hackathonCertifications = [
   { id: 5, title: 'AI for HealthCare Hackathon', image: AI  },
   { id: 6, title: 'ISTD Online Hackathon', image: ISTD  },
   { id: 7, title: 'Ultron 8.0 SRM Hackathon ', image: Ultron },
+  { id: 7, title: 'Inspiron Hackathon', image: Inspiron},
   { id: 8, title: 'WeHack Hackathon', image: wehack},
   { id: 9, title: 'HackJMI', image: HackJMI  },
 ];
