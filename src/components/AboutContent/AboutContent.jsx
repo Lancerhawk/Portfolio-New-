@@ -4,7 +4,7 @@ import StatsBox from '../StatsBox/StatsBox';
 
 function AboutContent() {
   const skills = [
-    'JavaScript','Typescript', 'React.js', 'Node.js & Express.js', 'PHP',
+    'JavaScript','Typescript', 'React.js', 'Node.js & Express.js','NEXT.js', 'PHP',
     'MongoDB', 'PostgreSQL', 'Kotlin', 'Figma', 'Unity Game Engine' , 'DSA(C++)'  , 
   ];
 
